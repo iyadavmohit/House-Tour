@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<style>
+    .democlass {color: brown;}
+</style>
+<title>BLeh</title>
+    </head>
+<body>
+    <h1>Bleh , Bleh Bleh</h1>
+    <h2>The createAttribute() and setAttribute() Methods</h2>
+    <p>click "Add" to create a class attribute and add it to first h1 element.</p>
+    <button onclick="myFunction()">Add</button>
+    <script>
+    function myFunction(){
+        const att=document.createAttribute("class");
+        att.value="democlass";
+        document.getElementsByTagName("h1")[0].setAttributeNode(att);
+    }
+</script>
+</body>
+</html>
